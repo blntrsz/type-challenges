@@ -1,1 +1,1 @@
-type MyReadonly<T> = any
+type MyReadonly<Object> = { readonly [Key in keyof Object]: Object[Key] }
